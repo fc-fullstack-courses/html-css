@@ -3,6 +3,38 @@
   <head>
     <title>My site</title>
     <meta charset="UTF-8" />
+
+    <style>
+      /* специфичность  = 1 */
+      p {
+        /* 
+        color: blue;
+        color: rgb(0,0,255); 
+        color: rgba(50,15,255, 0.05);
+        color: #0000ff;
+        A = 10
+        B = 11
+        C = 12
+        D = 13
+        E = 14
+        F = 15
+        FF =  15 *16^1 + 15 * 16^0
+        */
+        color: blue;
+        font-size: 32px;
+      }
+      /* специфичность  = 10 */
+      .text {
+        color: green;
+      }
+      .text2 {
+        color: purple;
+      }
+      /* специфичность  = 100 */
+      #text {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -52,7 +84,7 @@
 
       <article>
         <h2>Домашние рыбки</h2>
-        <p>
+        <p class="text" >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed
           deleniti vel nihil nobis consequatur repellendus incidunt dignissimos
           mollitia ipsum fugiat reprehenderit aperiam distinctio, dicta
@@ -63,7 +95,7 @@
 
       <article>
         <h2>Про собак</h2>
-        <p>
+        <p class="text" id="text" style="color:yellow;">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed
           deleniti vel nihil nobis consequatur repellendus incidunt dignissimos
           mollitia ipsum fugiat reprehenderit aperiam distinctio, dicta
@@ -85,7 +117,7 @@
 
       <article>
         <h2>Про попугаев</h2>
-        <p>
+        <p class="text2 text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed
           deleniti vel nihil nobis consequatur repellendus incidunt dignissimos
           mollitia ipsum fugiat reprehenderit aperiam distinctio, dicta
