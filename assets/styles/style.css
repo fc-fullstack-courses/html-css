@@ -6,7 +6,25 @@ html {
   font-size: 30px;
   background-color: #333333; /* цвет заливки*/
   color: white;
-  border: 5px dotted green;
+  /* отступ с 4 сторон сразу*/
+  padding: 30px;
+  /* верх, право, низ, лево */
+  padding: 30px 60px 90px 120px;
+  /* вертикаль, горизонталь*/
+  padding: 30px 60px;
+  /* верх, горизонталь, низ*/
+  padding: 10px 20px 30px;
+
+
+  border: 20px solid green;
+  /* border-left: 30px dotted red;
+  border-bottom-color: yellow; */
+
+  margin: 0 0 10px 0;
+
+  width: 500px;
+  height: 700px;
+  display: inline-block;
 }
 
 .article-text {
@@ -28,5 +46,14 @@ html {
 .article-heading {
   /* font-size: 30px; */
   text-align: center; /* выравнивание текста */
-  border: inherit;
+}
+
+.span {
+  font-size: 40px;
+  border: 5px solid red;
+  background-color: lightgray;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 700px;
 }
