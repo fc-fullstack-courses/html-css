@@ -1,27 +1,32 @@
-.text {
-  background-color: #333333; /* цвет заливки*/
-  color: limegreen;
-  line-height: 1.6; /*межстрочный интервал*/
+html {
+  font-family: 'Roboto';
+}
+
+.article {
   font-size: 30px;
-  font-weight: bold; /* жирность текста*/
+  background-color: #333333; /* цвет заливки*/
+  color: white;
+  border: 5px dotted green;
+}
+
+.article-text {
+  line-height: 1.6; /*межстрочный интервал*/
+  /* font-size: 30px; */
   font-style: italic; /* курсивность текста */
   font-family: 'Times New Roman', 'Arial', 'Roboto', sans-serif; /* семество шрифтов*/
   text-align: justify;
   text-transform: uppercase;
-
-  /* text-decoration-line: underline;
-  text-decoration-color: white;
-  text-decoration-style: wavy; */
-
-  text-decoration: underline wavy white;
+  border: unset;
 }
 
 .link {
-  background-color: #21ae21;
-  font-size: 30px;
+  /* font-size: initial; */
+  color: inherit;
   text-decoration: none;
 }
 
-.heading {
+.article-heading {
+  /* font-size: 30px; */
   text-align: center; /* выравнивание текста */
+  border: inherit;
 }
