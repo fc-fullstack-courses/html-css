@@ -1,29 +1,27 @@
-/* специфичность  = 1 */
-p {
-  /* 
-        color: blue;
-        color: rgb(0,0,255); 
-        color: rgba(50,15,255, 0.05);
-        color: #0000ff;
-        A = 10
-        B = 11
-        C = 12
-        D = 13
-        E = 14
-        F = 15
-        FF =  15 *16^1 + 15 * 16^0
-        */
-  color: blue;
-  font-size: 32px;
-}
-/* специфичность  = 10 */
 .text {
-  color: green;
+  background-color: #333333; /* цвет заливки*/
+  color: limegreen;
+  line-height: 1.6; /*межстрочный интервал*/
+  font-size: 30px;
+  font-weight: bold; /* жирность текста*/
+  font-style: italic; /* курсивность текста */
+  font-family: 'Times New Roman', 'Arial', 'Roboto', sans-serif; /* семество шрифтов*/
+  text-align: justify;
+  text-transform: uppercase;
+
+  /* text-decoration-line: underline;
+  text-decoration-color: white;
+  text-decoration-style: wavy; */
+
+  text-decoration: underline wavy white;
 }
-.text2 {
-  color: purple;
+
+.link {
+  background-color: #21ae21;
+  font-size: 30px;
+  text-decoration: none;
 }
-/* специфичность  = 100 */
-#text {
-  color: red;
+
+.heading {
+  text-align: center; /* выравнивание текста */
 }
