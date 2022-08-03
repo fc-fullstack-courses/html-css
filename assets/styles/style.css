@@ -1,30 +1,40 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
 html {
   font-family: 'Roboto';
 }
 
 .article {
-  font-size: 30px;
-  background-color: #333333; /* цвет заливки*/
-  color: white;
-  /* отступ с 4 сторон сразу*/
+  display: inline-block;
+  /* display: block;
+  display: inline; */
+  width: 500px;
+  height: 700px;
   padding: 30px;
-  /* верх, право, низ, лево */
-  padding: 30px 60px 90px 120px;
-  /* вертикаль, горизонталь*/
-  padding: 30px 60px;
-  /* верх, горизонталь, низ*/
-  padding: 10px 20px 30px;
-
-
   border: 20px solid green;
+  margin: 0 0 10px 0;
+  /* 
+  отступ с 4 сторон сразу
+  padding: 30px;
+  верх, право, низ, лево 
+  padding: 30px 60px 90px 120px;
+  вертикаль, горизонталь
+  padding: 30px 60px;
+  */
+
+  /* верх, горизонталь, низ*/
+
   /* border-left: 30px dotted red;
   border-bottom-color: yellow; */
 
-  margin: 0 0 10px 0;
 
-  width: 500px;
-  height: 700px;
-  display: inline-block;
+  font-size: 30px;
+  background-color: #333333; /* цвет заливки*/
+  color: white;
 }
 
 .article-text {
@@ -34,6 +44,7 @@ html {
   font-family: 'Times New Roman', 'Arial', 'Roboto', sans-serif; /* семество шрифтов*/
   text-align: justify;
   text-transform: uppercase;
+  font: italic bold 30px 1.6 'Times New Roman';
   border: unset;
 }
 
