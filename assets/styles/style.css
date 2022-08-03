@@ -12,8 +12,11 @@ html {
   display: inline-block;
   /* display: block;
   display: inline; */
-  width: 500px;
-  height: 700px;
+  /* width: 500px;
+  height: 700px; */
+  min-width: 300px;
+  max-width: 500px;
+  width: 1000px;
   padding: 30px;
   border: 20px solid green;
   margin: 0 0 10px 0;
