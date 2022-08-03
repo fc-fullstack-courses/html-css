@@ -8,15 +8,21 @@ html {
   font-family: 'Roboto';
 }
 
+main {
+  font-size: 0;
+}
+
 .article {
   display: inline-block;
   /* display: block;
   display: inline; */
   /* width: 500px;
   height: 700px; */
-  min-width: 300px;
-  max-width: 500px;
-  width: 1000px;
+
+  /* min-width: 300px;
+  max-width: 500px; */
+  width: 50%;
+
   padding: 30px;
   border: 20px solid green;
   margin: 0 0 10px 0;
@@ -62,12 +68,3 @@ html {
   text-align: center; /* выравнивание текста */
 }
 
-.span {
-  font-size: 40px;
-  border: 5px solid red;
-  background-color: lightgray;
-  padding: 20px;
-  margin: 20px;
-  width: 300px;
-  height: 700px;
-}
