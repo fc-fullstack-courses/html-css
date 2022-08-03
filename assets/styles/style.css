@@ -68,3 +68,26 @@ main {
   text-align: center; /* выравнивание текста */
 }
 
+div {
+  width: 400px;
+  padding: 20px;
+  color: black;
+  border: 5px solid red;
+  font-size: 20px;
+}
+
+.class-1 {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.class-2 {
+  margin-left: auto;
+  /* margin-right: auto; */
+  margin-top: -10px;
+  margin-bottom: 100px;
+}
+
+.class-3 {
+  margin: 30px auto;
+}
