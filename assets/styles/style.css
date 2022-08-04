@@ -34,3 +34,25 @@
   width: 50vw;
   height: 50vh;
 }
+
+div {
+  border: 10px solid;
+  padding: 20px;
+}
+
+.hidden-1 {
+  display: none;
+}
+
+.hidden-2 {
+  opacity: 0;
+}
+
+.hidden-3 {
+  visibility: hidden;
+}
+
+.hidden-4 {
+  height: 0;
+  overflow: hidden;
+}
