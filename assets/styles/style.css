@@ -4,38 +4,16 @@
   padding: 0;
 }
 
-.chessboard {
-  width: 800px;
-  height: 800px;
+/*
+  vh - viewport height
+  vw - viewport width
+
+  1vmin - 1 % от минимальной стороны вьюпорта 
+  1vmax- 1 % от максимальной стороны вьюпорта 
+*/
+
+div {
+  width: 100vmin;
+  height: 100vmin;
   border: 10px solid;
-  font-size: 0;
-}
-
-.panel {
-  display: inline-block;
-  width: 25%;
-  height: 25%;
-  background: black;
-  font-size: 30px;
-}
-
-.white-panel {
-  opacity: 0;
-}
-
-.hidden-1 {
-  display: none;
-}
-
-.hidden-2 {
-  opacity: 0;
-}
-
-.hidden-3 {
-  visibility: hidden;
-}
-
-.hidden-4 {
-  height: 0;
-  overflow: hidden;
 }
