@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 /*
@@ -12,8 +12,17 @@
   1vmax- 1 % от максимальной стороны вьюпорта 
 */
 
-div {
-  width: 100vmin;
-  height: 100vmin;
-  border: 10px solid;
+ul {
+  /*
+    list-style
+      list-style-type
+
+      list-style-position
+
+      list-style-image
+  */
+
+  /* list-style: '\00AE' inside url('https://www.thespruce.com/thmb/wcF9eGQBEQdnfds-hFG3SQjsHlc=/1732x1732/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-537282780-83176e6e223049858bcdf7c2cdfa61c3.jpg');
+   */
+  list-style: none;
 }
