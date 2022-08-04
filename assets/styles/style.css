@@ -4,40 +4,23 @@
   padding: 0;
 }
 
-.img {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  object-fit: cover; 
-}
-
-.tall-img {
-  object-position: 0 -50px;
-}
-
-.smoker-img {
-  height: 400px;
-  width: 400px;
-  background-color: red;
-  background-image: url('../images/img2.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:0 -50px;
-  border-radius: 50%;
-
-}
-
-.outer {
-  background-color: lightblue;
-  font-size: 30px;
-  border: 10px solid red;
-  width: 50vw;
-  height: 50vh;
-}
-
-div {
+.chessboard {
+  width: 800px;
+  height: 800px;
   border: 10px solid;
-  padding: 20px;
+  /* font-size: 0; */
+}
+
+.panel {
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  background: black;
+  font-size: 30px;
+}
+
+.white-panel {
+  opacity: 0;
 }
 
 .hidden-1 {
