@@ -3,9 +3,8 @@
   <head>
     <title>My site</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <!-- <link rel="stylesheet" href="assets/styles/reset.css" /> -->
     <link rel="stylesheet" href="assets/styles/style.css" />
-
   </head>
   <body>
     <main>
@@ -28,6 +27,64 @@
         <li>Lorem.</li>
         <li>Lorem.</li>
       </ol>
+
+      <table>
+        <caption>
+          Clients
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Petro</td>
+            <td>30</td>
+            <td>Kyiv</td>
+          </tr>
+          <tr>
+            <td>Vasya</td>
+            <td>12</td>
+            <td>Zaporizhzhia</td>
+          </tr>
+          <tr>
+            <td>Ktulhu</td>
+            <td>99999</td>
+            <td>R`lyeh</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td>Average Age:</td>
+          <td>33347</td>
+        </tfoot>
+      </table>
+
+      <table>
+        <caption>
+          Clients
+        </caption>
+        <tr>
+          <th scope="row">Name</th>
+          <td>Petro</td>
+          <td>Vasya</td>
+          <td>Ktulhu</td>
+        </tr>
+        <tr>
+          <th scope="row">Age</th>
+          <td>30</td>
+          <td>12</td>
+          <td>99999</td>
+        </tr>
+        <tr>
+          <th scope="row">City</th>
+          <td>Kyiv</td>
+          <td>Zaporizhzhia</td>
+          <td>R`lyeh</td>
+        </tr>
+      </table>
     </main>
   </body>
 </html>
