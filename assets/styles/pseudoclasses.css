@@ -1,0 +1,29 @@
+/*
+selector:pseudoclass
+*/
+
+:root {
+  font-size: 24px;
+}
+
+body :not(.simple, span, body) {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: blue;
+  color: wheat;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  color: blue;
+  background-color: wheat;
+}
+
+.btn:active {
+  color: red;
+}
