@@ -2,19 +2,45 @@
   color: red;
 }
 
-[href="https://google.com"] {
+[href="https://google.com"]
+{
   background-color: lightblue;
   color: green;
 }
 
-[title*="test"] {
+[title*='test'] {
   color: purple;
 }
 
-[title^="start"] {
+[title^='start'] {
   background-color: blue;
 }
 
-[title$="end"] {
+[title$='end'] {
   background-color: limegreen;
+}
+
+a[href="https://google.com"][title]#first.class1.class2
+{
+  background-color: darkcyan;
+  color: white;
+}
+
+div p {
+  color: #4c47ee;
+}
+
+div > p,
+div > p > a {
+  font-size: 30px;
+  color: yellow;
+}
+
+p ~ p {
+  font-weight: bold;
+}
+
+p + p,
+.article > .text + .text {
+  font-style: italic;
 }
