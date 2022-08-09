@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --box-bg-color: rgb(107, 4, 47);
+  --box-padding: 20px;
+}
+
 main {
   width: 500px;
   margin: 0 auto;
@@ -80,4 +90,56 @@ section {
   position: sticky;
   top: 40px;
   left: 30%;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 20px;
+  background-color: var(--box-bg-color);
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 20px;
+  background-color: var(--box-bg-color);
+}
+
+.top-left {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  padding: 20px;
+  background-color: var(--box-bg-color);
+}
+
+/* .top-right {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  padding: 20px;
+  background-color: var(--box-bg-color);
+} */
+
+.position-fixed {
+  position: fixed;
+}
+
+.padding-20px {
+  padding: 20px;
+}
+
+.bg-color {
+  background-color: var(--box-bg-color);
+}
+
+.top-10px {
+  top: 10px;
+}
+
+.right-10px {
+  right: 10px;
 }
