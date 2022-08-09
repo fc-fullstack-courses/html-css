@@ -1,0 +1,45 @@
+.main-heading {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.stylized,
+.text::first-letter {
+  font-size: 80px;
+  color: red;
+  font-style: italic;
+  font-family: Arial;
+  text-transform: capitalize;
+}
+
+.text::first-line {
+  background-color: yellow;
+}
+
+.text::selection {
+  background-color: deeppink;
+  color: white;
+}
+
+input::placeholder {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text::before,
+.text::after {
+  background-color: lime;
+  font-size: 30px;
+
+  display: inline-block;
+}
+
+.text::before {
+  content: open-quote;
+}
+
+.text::after {
+  content: close-quote;
+}
