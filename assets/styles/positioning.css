@@ -93,25 +93,24 @@ section {
 }
 
 .bottom-left {
-  position: fixed;
   bottom: 10px;
   left: 10px;
-  padding: 20px;
-  background-color: var(--box-bg-color);
 }
 
 .bottom-right {
-  position: fixed;
   bottom: 10px;
   right: 10px;
-  padding: 20px;
-  background-color: var(--box-bg-color);
 }
 
 .top-left {
-  position: fixed;
   left: 10px;
   top: 10px;
+}
+
+.top-left,
+.bottom-right,
+.bottom-left {
+  position: fixed;
   padding: 20px;
   background-color: var(--box-bg-color);
 }
