@@ -19,7 +19,7 @@
   display: block;
   position: relative;
   padding: 10px 20px;
-  border: 2px solid;
+  border: 2px solid black;
   /* border-radius: 15px; */
   background-color: white;
   /* transition-property: background-color, color, padding;
@@ -83,4 +83,10 @@
 
 .ease-in-out {
   transition-timing-function: ease-in-out;
+}
+
+
+.svg {
+  width: 100px;
+  color: lime;
 }
