@@ -15,11 +15,21 @@
   color: white;
   font-size: 40px;
   text-align: center;
-  flex-grow: 1;
+  flex-basis: 200px;
 }
 
 .grow {
   /* flex-grow: 1; */
+}
+
+.flex {
+  /*
+  flex-grow: 50;
+  flex-shrink: 15;
+  flex-basis: 300px; 
+  */
+  /* flex: 50 15 300px;
+  flex: 1; */
 }
 
 
