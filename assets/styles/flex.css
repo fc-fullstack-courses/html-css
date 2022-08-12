@@ -1,9 +1,3 @@
-
-.align-self {
-  align-self: flex-start;
-}
-
-
 .container {
   display: flex;
   height: 100vh;
@@ -17,12 +11,16 @@
 .item {
   padding: 20px;
   border: 5px solid red;
+  /* max-width: 20px;
+  min-width: 50px; */
   background-color: darkgreen;
   color: white;
   font-size: 40px;
   text-align: center;
+  flex-basis: 300px;
 }
 
-.order {
-  order: -1;
+.flex-basis {
+  flex-basis: 300px;
+  /* min-width: 10px; */
 }
