@@ -1,3 +1,9 @@
+
+.align-self {
+  align-self: flex-start;
+}
+
+
 .container {
   display: flex;
   height: 100vh;
@@ -9,7 +15,6 @@
 }
 
 .item {
-  margin: auto;
   padding: 20px;
   border: 5px solid red;
   background-color: darkgreen;
