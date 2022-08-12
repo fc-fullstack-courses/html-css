@@ -6,7 +6,6 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-
 }
 
 .item {
@@ -19,6 +18,6 @@
   text-align: center;
 }
 
-.m-left {
-  margin-left: auto;
+.order {
+  order: -1;
 }
