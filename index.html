@@ -20,25 +20,27 @@
           name="username"
           type="text"
           placeholder="Enter name"
+          required
+          pattern="^[a-z0-9_-]{3,15}$"
         />
       </label>
       <label
         >Password:
-        <input class="input" name="password" type="password" />
+        <input class="input" name="password" type="password"  required/>
       </label>
       <label for=""
         >Email:
-        <input class="input" type="email" name="email" />
+        <input class="input" type="email" name="email" required pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"/>
       </label>
       <label for="is-adult">Вы совершеннолетний?</label>
       <input id="is-adult" type="checkbox" name="is-adult" value="true" />
 
       <label>
-        <input type="radio" name="gender" value="male"/>
+        <input type="radio" name="gender" value="male" />
         Male
       </label>
       <label>
-        <input type="radio" name="gender" value="female"/>
+        <input type="radio" name="gender" value="female" required/>
         Female
       </label>
 
