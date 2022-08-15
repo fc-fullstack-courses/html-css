@@ -26,11 +26,17 @@
       </label>
       <label
         >Password:
-        <input class="input" name="password" type="password"  required/>
+        <input class="input" name="password" type="password" required />
       </label>
       <label for=""
         >Email:
-        <input class="input" type="email" name="email" required pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"/>
+        <input
+          class="input"
+          type="email"
+          name="email"
+          required
+          pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
+        />
       </label>
       <label for="is-adult">Вы совершеннолетний?</label>
       <input id="is-adult" type="checkbox" name="is-adult" value="true" />
@@ -40,9 +46,22 @@
         Male
       </label>
       <label>
-        <input type="radio" name="gender" value="female" required/>
+        <input type="radio" name="gender" value="female" required />
         Female
       </label>
+
+      <select class="input" name="city" size="3">
+        <!-- <option value="value-to be sent to server">Description</option> -->
+        <optgroup label="Ukraine">
+          <option value="Lviv">Lviv</option>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Zapor">Zaporizhzhia</option>
+          <option value="Dnipro">Dnipro</option>
+        </optgroup>
+        <optgroup label="Poland">
+          <option value="Warsaw">Warsaw</option>
+        </optgroup>
+      </select>
 
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
