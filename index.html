@@ -6,62 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/styles/forms.css" />
+    <link rel="stylesheet" href="assets/styles/forms.css" />
   </head>
   <body>
     <h1>Form</h1>
 
     <form class="form" action="#" method="get">
       <!-- Содержимое формы -->
-      <label for="name"
-        >Name:
-        <input
-          id="name"
-          class="input"
-          name="username"
-          type="text"
-          placeholder="Enter name"
-          required
-          pattern="^[a-z0-9_-]{3,15}$"
-        />
-      </label>
-      <label
-        >Password:
-        <input class="input" name="password" type="password" required />
-      </label>
-      <label for=""
-        >Email:
-        <input
-          class="input"
-          type="email"
-          name="email"
-          required
-          pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
-        />
-      </label>
-      <label for="is-adult">Вы совершеннолетний?</label>
-      <input id="is-adult" type="checkbox" name="is-adult" value="true" />
+      <fieldset>
+        <legend>Auth data</legend>
+        <label for="name"
+          >Name:
+          <input
+            id="name"
+            class="input"
+            name="username"
+            type="text"
+            placeholder="Enter name"
+            required
+            pattern="^[a-z0-9_-]{3,15}$"
+            autofocus
+            autocomplete="username"
+          />
+        </label>
+        <label
+          >Password:
+          <input class="input" name="password" type="password" required />
+        </label>
+        <label for=""
+          >Email:
+          <input
+            class="input"
+            type="email"
+            name="email"
+            required
+            pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
+          />
+        </label>
+      </fieldset>
 
-      <label>
-        <input type="radio" name="gender" value="male" />
-        Male
-      </label>
-      <label>
-        <input type="radio" name="gender" value="female" required />
-        Female
-      </label>
+      <fieldset>
+        <legend>User data</legend>
+        <label for="is-adult">Вы совершеннолетний?</label>
+        <input id="is-adult" type="checkbox" name="is-adult" value="true" />
 
-      <select class="input" name="city" size="3">
-        <!-- <option value="value-to be sent to server">Description</option> -->
-        <optgroup label="Ukraine">
-          <option value="Lviv">Lviv</option>
-          <option value="Kyiv">Kyiv</option>
-          <option value="Zapor">Zaporizhzhia</option>
-          <option value="Dnipro">Dnipro</option>
-        </optgroup>
-        <optgroup label="Poland">
-          <option value="Warsaw">Warsaw</option>
-        </optgroup>
-      </select>
+        <label>
+          <input type="radio" name="gender" value="male" />
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required />
+          Female
+        </label>
+
+        <label for="city">Choose your city:</label>
+        <select id="city" class="input" name="city">
+          <!-- <option value="value-to be sent to server">Description</option> -->
+          <optgroup label="Ukraine">
+            <option value="Lviv">Lviv</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Zapor">Zaporizhzhia</option>
+            <option value="Dnipro">Dnipro</option>
+          </optgroup>
+          <optgroup label="Poland">
+            <option value="Warsaw">Warsaw</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+     
+
+      <label for="textarea">Post your comment</label>
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        maxlength="5"
+      ></textarea>
 
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
