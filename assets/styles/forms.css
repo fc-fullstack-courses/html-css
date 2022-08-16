@@ -18,3 +18,46 @@
 textarea {
   resize: none;
 }
+
+input {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input:required {
+  border-color: red;
+}
+
+input:optional {
+  border-color: orange;
+}
+
+.input-radio:checked {
+  position: absolute;
+  top: 10px;
+}
+
+button:disabled {
+  opacity: 0.3;
+}
+
+:in-range {
+}
+
+:out-of-range {
+  color: white;
+}
+
+::placeholder {
+  color: green;
+  font-weight: bold;
+}
+
+input:valid {
+  background-color: green;
+}
+
+input:invalid {
+background-color: red;
+}

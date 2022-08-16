@@ -31,15 +31,14 @@
         </label>
         <label
           >Password:
-          <input class="input" name="password" type="password" required />
+          <input class="input" disabled name="password" type="password" required />
         </label>
-        <label for=""
+        <label
           >Email:
           <input
             class="input"
             type="email"
             name="email"
-            required
             pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
           />
         </label>
@@ -51,7 +50,7 @@
         <input id="is-adult" type="checkbox" name="is-adult" value="true" />
 
         <label>
-          <input type="radio" name="gender" value="male" />
+          <input type="radio" name="gender" value="male" checked />
           Male
         </label>
         <label>
@@ -60,7 +59,7 @@
         </label>
 
         <label for="city">Choose your city:</label>
-        <select id="city" class="input" name="city">
+        <select disabled id="city" class="input" name="city">
           <!-- <option value="value-to be sent to server">Description</option> -->
           <optgroup label="Ukraine">
             <option value="Lviv">Lviv</option>
@@ -123,7 +122,8 @@
 
       <input type="text" name="city-2" list="city-list">
 
-      <button type="submit">Submit</button>
+      <input type="number" max="10">
+      <button disabled type="submit">Submit</button>
       <button type="reset">Reset</button>
       <button type="button">Do some JS magic</button>
     </form>
