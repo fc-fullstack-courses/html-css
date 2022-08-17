@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/forms.css" />
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <form class="form" action="#" method="get">
+      <!-- Содержимое формы -->
+      <fieldset>
+        <legend>Auth data</legend>
+        <label for="name"
+          >Name:
+          <input
+            id="name"
+            class="input"
+            name="username"
+            type="text"
+            placeholder="Enter name"
+            required
+            pattern="^[a-z0-9_-]{3,15}$"
+            autofocus
+            autocomplete="username"
+          />
+        </label>
+        <label
+          >Password:
+          <input class="input" disabled name="password" type="password" required />
+        </label>
+        <label
+          >Email:
+          <input
+            class="input"
+            type="email"
+            name="email"
+            pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>User data</legend>
+        <label for="is-adult">Вы совершеннолетний?</label>
+        <input id="is-adult" type="checkbox" name="is-adult" value="true" />
+
+        <label>
+          <input type="radio" name="gender" value="male" checked />
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required />
+          Female
+        </label>
+
+        <label for="city">Choose your city:</label>
+        <select disabled id="city" class="input" name="city">
+          <!-- <option value="value-to be sent to server">Description</option> -->
+          <optgroup label="Ukraine">
+            <option value="Lviv">Lviv</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Zapor">Zaporizhzhia</option>
+            <option value="Dnipro">Dnipro</option>
+          </optgroup>
+          <optgroup label="Poland">
+            <option value="Warsaw">Warsaw</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <label for="textarea">Post your comment</label>
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        maxlength="5"
+      ></textarea>
+
+      <datalist id="city-list">
+        <option value="Kyiv">Kyiv</option>
+        <option value="Lviv">Lviv</option>
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Odesa">Odesa</option>
+        <option value="Zaporizhzhia">Zaporizhzhia</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Warsaw">Warsaw</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Lviv">Lviv</option>
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Odesa">Odesa</option>
+        <option value="Zaporizhzhia">Zaporizhzhia</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Warsaw">Warsaw</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Lviv">Lviv</option>
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Odesa">Odesa</option>
+        <option value="Zaporizhzhia">Zaporizhzhia</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Warsaw">Warsaw</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Lviv">Lviv</option>
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Odesa">Odesa</option>
+        <option value="Zaporizhzhia">Zaporizhzhia</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Warsaw">Warsaw</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Lviv">Lviv</option>
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Odesa">Odesa</option>
+        <option value="Zaporizhzhia">Zaporizhzhia</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Warsaw">Warsaw</option>
+      </datalist>
+
+      <input type="text" name="city-2" list="city-list">
+
+      <input type="number" max="10">
+      <button disabled type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Do some JS magic</button>
+    </form>
+
+    <!-- 
+  <input type="text"> (default value)
+  <input type="password">
+  <input type="checkbox">
+  <input type="email">
+  <input type="file"> 
+  <input type="number" min="0" max="10" step="0.5">
+  <input type="radio">
+
+
+<input type="button">
+<input type="submit">
+<input type="reset">
+<input type="image" src="assets/images/img1.jpg">
+
+<input name="color" type="color">
+<input type="hidden">
+<input type="tel">
+<input type="url" name="url">
+<input type="search">
+<input type="range" name="range" max="100" min="0" step="50">
+
+<input type="date">
+<input type="datetime-local">
+<input type="month">
+<input type="time">
+<input type="week">
+
+ -->
+  </body>
+</html>
