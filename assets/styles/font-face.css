@@ -22,6 +22,11 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: NotoSansJP;
+  src: url(../fonts/NotoSansJP/NotoSansJP-Regular.otf) format('opentype');
+}
+
 .main-heading {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -29,9 +34,15 @@
 .basic-text {
   font-family: Merriweather;
   font-style: italic;
+  background-color: aqua;
 }
 
 .fancy-text {
-  font-family: Rubic;
+  font-family: Merriweather;
   font-style: italic;
 }
+
+.jp {
+  font-family: NotoSansJP;
+}
+
