@@ -16,7 +16,8 @@
 
 @font-face {
   font-family: Merriweather;
-  src: url('../fonts/Merriweather/Merriweather-Italic.ttf') format('TrueType');
+  src: local('Merriweather'), local('Merri-weather'), local('Merri weather'),
+    url('../fonts/Merriweather/Merriweather-Italic.ttf') format('TrueType');
   font-weight: 400;
   font-style: italic;
 }
