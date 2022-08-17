@@ -1,0 +1,36 @@
+@font-face {
+  /*
+  format values: "woff", "woff2", "truetype", "opentype", "embedded-opentype", и "svg".
+  */
+  font-family: Rubic;
+  src: url('../fonts/Rubik/RubikDistressed-Regular.ttf') format('TrueType'),
+    url('../fonts/Rubik/RubikDistressed-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather/Merriweather-Regular.ttf') format('TrueType');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather/Merriweather-Italic.ttf') format('TrueType');
+  font-weight: 400;
+  font-style: italic;
+}
+
+.main-heading {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.basic-text {
+  font-family: Merriweather;
+  font-style: italic;
+}
+
+.fancy-text {
+  font-family: Rubic;
+  font-style: italic;
+}
