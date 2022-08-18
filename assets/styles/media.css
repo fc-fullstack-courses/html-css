@@ -1,0 +1,87 @@
+@import 'reset.css';
+
+.header {
+  background-color: darkslategray;
+  color: white;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo,
+.nav {
+  margin: 10px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  /* margin-bottom: auto; */
+  background-color: darkblue;
+  padding: 20px;
+}
+
+.article {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.article + .article {
+  margin-top: 20px;
+}
+
+.article-header {
+  text-align: center;
+}
+
+.footer {
+  /* margin-top: auto; */
+  background-color: orange;
+  padding: 20px;
+}
+
+@media screen {
+  .logo {
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 800px), print {
+  .article {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 2440px), (min-width: 1600px) {
+  .article {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
