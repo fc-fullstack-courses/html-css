@@ -1,4 +1,6 @@
 @import 'reset.css';
+@import "print-styles.css" print;
+@import "screen-styles.css" screen, speech;
 
 .header {
   background-color: darkslategray;
@@ -10,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 .logo,
 .nav {

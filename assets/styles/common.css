@@ -1,0 +1,6 @@
+@import "component1.css";
+
+:root {
+  --var1: 10px;
+  font-size: 16px;
+}

@@ -1,0 +1,16 @@
+:root {
+  font-size: 30px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.article {
+  font-size: 1.5rem;
+  color: green;
+}
