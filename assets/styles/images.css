@@ -10,3 +10,12 @@
   object-fit: cover;
   object-position: center;
 }
+
+.text {
+  /* column-count: 3; */
+  column-width: 250px;
+  column-gap: 20px;
+  column-rule: 2px solid red;
+  /* column */
+  columns: 250px 3;
+}
