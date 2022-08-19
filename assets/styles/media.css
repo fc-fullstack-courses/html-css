@@ -65,17 +65,48 @@ main {
   background-color: orange;
   padding: 20px;
 }
+/*MOBILE FIRST */
+/* @media screen and (min-width: 576px) {
+}
 
-@media screen {
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+} */
+
+/* DESKTOP FIRST
+@media screen and (max-width: 1400px) {
   .logo {
     font-style: italic;
   }
 }
 
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    font-style: italic;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .logo {
+    font-style: italic;
+  }
+}
+*/
+
 @media screen and (min-width: 800px), print {
   .article {
     background-color: red;
     color: white;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    font-style: italic;
   }
 }
 
