@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/images.css" />
+  </head>
+  <body>
+    <picture>
+      <source
+        srcset="assets/images/woods.webp"
+        type="image/webp"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="assets/images/4k-pic.jpg"
+        type="image/jpeg"
+        media="(min-width:768px)"
+      />
+      <source srcset="assets/images/small-pic.jpg" media="(max-width:768px)" />
+      <img class="img" src="./assets/images/4k-pic.jpg" alt="4k picture" />
+    </picture>
+  </body>
+</html>
