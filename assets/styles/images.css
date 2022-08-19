@@ -1,4 +1,12 @@
+.wrapper {
+  width: 400px;
+  height: 200px;
+}
+
 .img {
+  display: block;
   width: 100%;
-  /* height: 100vh; */
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
 }
